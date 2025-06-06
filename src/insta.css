@@ -484,7 +484,7 @@ Modal
    ================================ */
 
 /* Override tablet/desktop grid for mobile devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 599px) {
   /* Force single column layout on mobile */
   #bodyPart {
     display: grid !important;

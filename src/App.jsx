@@ -20,7 +20,7 @@ function App() {
     setOverlayOpen(true)
   }
 
-  const handleAddCard = ({ title, file, imageUrl }) => {
+  const handleAddCard = ({ title, imageUrl }) => {
     setCards([
       ...cards,
       {

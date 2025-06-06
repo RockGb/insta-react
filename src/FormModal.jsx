@@ -6,7 +6,6 @@ const FormModal = ({ open, onClose, onSubmit }) => {
   const [title, setTitle] = useState("");
   const [file, setFile] = useState(null);
   const [imageUrl, setImageUrl] = useState("");
-  const [touched, setTouched] = useState(false);
   const fileInputRef = useRef();
 
   if (!open) return null;
@@ -32,7 +31,6 @@ const FormModal = ({ open, onClose, onSubmit }) => {
     setTitle("");
     setFile(null);
     setImageUrl("");
-    setTouched(false);
     fileInputRef.current.value = "";
     onClose();
   };
@@ -53,7 +51,7 @@ const FormModal = ({ open, onClose, onSubmit }) => {
               id="image-title"
               placeholder="Enter a descriptive title..."
               value={title}
-              onChange={e => { setTitle(e.target.value); setTouched(true); }}
+              onChange={e => { setTitle(e.target.value); }}
             />
           </div>
           <div className="form-row-2">
