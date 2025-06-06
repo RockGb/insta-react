@@ -702,3 +702,57 @@ Modal
   font-size: 1.5rem !important;
   box-shadow: none !important;
 }
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3vw;
+}
+.header-avatar-info {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.header-avatar-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.header-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: flex-start;
+}
+.header-person-name {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+.header-profession {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 0;
+}
+.header-edit-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #222;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+}
+.header-new-post {
+  display: flex;
+  align-items: center;
+}
