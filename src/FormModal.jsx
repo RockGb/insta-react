@@ -40,8 +40,8 @@ const FormModal = ({ open, onClose, onSubmit }) => {
   return (
     <div className="modal-overlay open-modal" onClick={e => e.target.classList.contains('modal-overlay') && onClose()}>
       <div className="modal-container">
-        <button className="modal-close-btn" onClick={onClose} type="button" style={{ position: 'absolute', top: 12, right: 16, color: '#111', background: 'transparent', border: 'none', zIndex: 10, fontSize: '1.5rem' }}>
-          <i className="fas fa-times"></i>
+        <button className="modal-close-btn" onClick={onClose} type="button" style={{ position: 'absolute', top: 12, right: 16, color: '#111', background: 'transparent', border: 'none', zIndex: 10, fontSize: '1.5rem' }} aria-label="Close">
+          ×
         </button>
         <form className="modal-form" onSubmit={handleSubmit}>
           <p>Image Upload Form</p>
